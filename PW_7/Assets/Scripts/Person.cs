@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Person : MonoBehaviour
+public abstract class Person : MonoBehaviour
 {
    private string name = "Tom";
    private int health = 100;
@@ -34,4 +34,6 @@ public class Person : MonoBehaviour
    {
         Debug.Log($"Your name: {Name}");
    }
+
+   public abstract void TakeDamage (int damageValue);
 }

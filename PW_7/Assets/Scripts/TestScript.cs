@@ -4,9 +4,11 @@ public class TestScript : MonoBehaviour
 {
     void Start()
     {
-        Person person = new Person();
-        person.ShowStat();
         Player player = new Player();
-        player.ShowStat(); 
+        player.ShowStat();
+        player.TakeDamage(10);
+
+        Dragon dragon = new Dragon();
+        dragon.TakeDamage(15); 
     }
 }

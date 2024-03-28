@@ -13,4 +13,9 @@ public class Player : Person
     {
         Debug.Log($"Your name: {Name}\nYour experience: {Experience}");
     }
+
+    public override void TakeDamage(int damageValue)
+    {
+        Debug.Log($"My name is {Name} \nAfter hitting with force: {damageValue} I have: {Health - damageValue} ");
+    }
 }
